@@ -2,7 +2,7 @@
     <seatmap-wrapper></seatmap-wrapper>
 </template>
 <script>
-import SeatmapWrapper from './components/SeatmapWrapper'
+import SeatmapWrapper from './src/Views/SeatmapWrapper.vue'
 export default({
     components:{
         SeatmapWrapper

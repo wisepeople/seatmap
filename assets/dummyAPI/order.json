@@ -1,0 +1,135 @@
+{
+  "data": {
+    "id": "XXXXXX",
+    "numericId": "99999999",
+    "isGroupBooking": false,
+    "air": {
+      "bounds": [
+        {
+          "airBoundId": "1",
+          "originLocationCode": "GMP",
+          "destinationLocationCode": "KPO",
+          "flights": [
+            {
+              "id": "ST1",
+              "cabin": "eco",
+              "bookingClass": "Y",
+              "statusCode": "HK"
+            }
+          ],
+          "duration": 3600
+        }
+      ]
+    },
+    "travelers": [
+      {
+        "passengerTypeCode": "ADT",
+        "id": "PT1",
+        "names": [
+          {
+            "firstName": "Test",
+            "lastName": "NA",
+            "title": "DR",
+            "nameType": "universal",
+            "isPreferred": true
+          }
+        ]
+      },
+      {
+        "passengerTypeCode": "ADT",
+        "id": "PT2",
+        "names": [
+          {
+            "firstName": "Daehan",
+            "lastName": "Kim",
+            "title": "MR",
+            "nameType": "universal",
+            "isPreferred": true
+          }
+        ]
+      },
+      {
+        "passengerTypeCode": "ADT",
+        "id": "PT3",
+        "names": [
+          {
+            "firstName": "Winter",
+            "lastName": "Han",
+            "title": "DR",
+            "nameType": "universal",
+            "isPreferred": true
+          }
+        ]
+      },
+      {
+        "passengerTypeCode": "ADT",
+        "id": "PT4",
+        "names": [
+          {
+            "firstName": "Daehan",
+            "lastName": "Lee",
+            "title": "MR",
+            "nameType": "universal",
+            "isPreferred": true
+          }
+        ]
+      }
+    ]
+  },
+  "dictionaries": {
+    "location": {
+      "KPO": {
+        "type": "city",
+        "airportName": "POHANG",
+        "cityCode": "KPO",
+        "cityName": "POHANG",
+        "countryCode": "KR",
+        "timeZone": "UTC+0900"
+      },
+      "GMP": {
+        "type": "airport",
+        "airportName": "GIMPO INTERNATIONAL",
+        "cityCode": "SEL",
+        "countryCode": "KR",
+        "timeZone": "UTC+0900"
+      },
+      "SEL": {
+        "type": "city",
+        "cityCode": "SEL",
+        "cityName": "SEOUL",
+        "countryCode": "KR",
+        "timeZone": "UTC+0900"
+      }
+    },
+    "country": { "KR": "KOREA REPUBLIC OF" },
+    "airline": { "KE": "KOREAN AIR" },
+    "aircraft": { "773": "BOEING 777-300" },
+    "flight": {
+      "ST1": {
+        "marketingAirlineCode": "KE",
+        "operatingAirlineCode": "KE",
+        "operatingAirlineName": "KOREAN AIR",
+        "marketingFlightNumber": "441",
+        "operatingAirlineFlightNumber": "441",
+        "departure": {
+          "locationCode": "GMP",
+          "dateTime": "2021-08-15T20:00:00+09:00",
+          "terminal": "D"
+        },
+        "arrival": {
+          "locationCode": "KPO",
+          "dateTime": "2021-08-15T21:00:00+09:00"
+        },
+        "aircraftCode": "773",
+        "duration": 3600,
+        "isOpenSegment": false,
+        "secureFlightIndicator": false,
+        "flightStatus": "scheduled"
+      }
+    },
+    "tax": { "DAEB": "DAEB", "DA": "DA" },
+    "currency": { "KRW": { "name": "S.KOREAN WON", "decimalPlaces": 0 } },
+    "bookingStatus": { "HK": { "name": "Holding confirmed" } }
+  },
+  "ancillaryType": "SEAT"
+}

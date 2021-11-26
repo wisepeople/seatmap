@@ -1,0 +1,24 @@
+// export namespace SeatAssign{
+//     // namespace Base
+//     // export interface Cell{}
+//     // export class Seat implements Cell{}
+//     // export class Facillity implements Cell{}
+//     // export class Asile implements Cell{}
+//     // export class Empty implements Cell{}
+
+//     // export class Row{}  
+//     // export class RowInfo{}
+    
+//     // export class SegmentsData{}
+//     // export interface SegmentData{}
+//     // export class SeatSegment implements SegmentData{}
+//     // export class ErrorSegment implements SegmentData{}
+//     // export class GotoWCISegment implements SegmentData{}
+//     // export class SegmentInfo{}
+
+//     // export class Flights{}
+//     // export class Flight{}
+
+//     // export class Travelers{}
+//     // export class Traveler{}
+// }
