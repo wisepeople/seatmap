@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import lodash from 'lodash'
+
+Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
 
 new Vue({
     el: "#app",
@@ -13,7 +16,7 @@ new Vue({
 
 // const moduleA = {
 //     namespaced: true,
-//     state: { 
+//     state: {
 //         count: 3
 //     },
 //     mutations: {
@@ -24,7 +27,7 @@ new Vue({
 //     getters: {
 //       doubleCount (state) {
 //           return state.count * 2
-//       }  
+//       }
 //     },
 //     actions: {
 //         incrementIfOdd({state, commit}) {
@@ -41,16 +44,16 @@ new Vue({
 //         subModule: {
 //             namespaced: true,
 //             state: {
-                
+
 //             },
 //             mutations: {
 //                 login () {}
 //             },
 //             getters: {
-//               login () {}  
+//               login () {}
 //             },
 //             actions: {
-//               login () {}  
+//               login () {}
 //             }
 //         }
 //     },
@@ -58,16 +61,16 @@ new Vue({
 //         count: 8
 //     },
 //     mutations: {
-        
+
 //     },
 //     getters: {
 //         someGetter (state, getters) {
-            
+
 //         }
 //     },
 //     actions: {
 //         someAction({ dispatch, commit, getters }) {
-            
+
 //         }
 //     }
 // }
@@ -81,18 +84,18 @@ new Vue({
 //         count: 2
 //     },
 //     mutations: {
-        
+
 //     },
 //     getters: {
-        
+
 //     },
 //     actions: {
-        
+
 //     }
 // })
 
 
-// new Vue({ 
+// new Vue({
 //     el: '#app',
 //     store,
 //     data: {

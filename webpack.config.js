@@ -168,7 +168,7 @@ module.exports = (env, opts) => {
   const config = {
     // 가져오기 확장자 생략 가능
     resolve: {
-      extensions: ['.js', '.vue'],
+      extensions: ['.ts', '.js', '.vue'],
       // 절대 경로 별칭 설정
       alias: {
         '~': path.resolve(__dirname), // E.g. `import '~/components/TodoApp'` in script tag
@@ -191,7 +191,7 @@ module.exports = (env, opts) => {
     },
     // 모듈 처리 방식을 설정
     module: {
-      
+
       rules: [
         {
           test: /\.vue$/,
