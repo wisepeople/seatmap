@@ -93,13 +93,13 @@ export default ({
     prop:{
         travelers:Object
     },
-    // data(){
-    //     return {
-    //         travelerList:this.travelers.getList()
-    //     }
-    // },
+    data(){
+        return {
+            travelerList:this.travelers.getList()
+        }
+    },
     computed:{
-        travelerList:this.travelers.getList()
+        // travelerList:this?.travelers?.getList()
     }
 })
 </script>

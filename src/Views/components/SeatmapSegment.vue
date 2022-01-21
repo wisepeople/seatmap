@@ -7,7 +7,7 @@
         -->
         <div class="seat-layout">
             <div class="seat-layout__aside">
-                <seatmap-travelers v-cloak :travelers="travelers"></seatmap-travelers>
+                <seatmap-travelers v-if="!!travelers" v-cloak :travelers="travelers"></seatmap-travelers>
                 <seatmap-remarks></seatmap-remarks>
             </div>
 
@@ -78,10 +78,10 @@ export default ({
     },
     data(){
         return {
-            // popoverId:this.popoverId,
-            // flights:this.flights,
-            // travelers:this.travelers,
-            // currentSegment:this.currentSegment
+            popoverId:this.popoverId,
+            flights:this.flights,
+            travelers:this.travelers,
+            currentSegment:this.currentSegment
         }
     },
     methods:{

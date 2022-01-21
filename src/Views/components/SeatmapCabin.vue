@@ -1,5 +1,5 @@
 <template>
-    <div v-if="currentSegment&&currentSegment.decks" class="plane -rear -buffer">
+    <div v-if="!!currentSegment && currentSegment.decks?.length > 0" class="plane -rear -buffer">
         <table v-for="(deck, i) in currentSegment.decks" :key="i">
             <thead>
                 <tr>
@@ -55,38 +55,38 @@ export default ({
 
             // ],
             rows:[
-                {
-                    rowInfo:{
-                        rowNumber:'1',
-                        onWing:false,
-                        noWindow:false
-                    },
-                    cols:[{type:'seat', seatNumber:'1A'}, {type:'seat', seatNumber:'1B'}, {type:'asile'}, {type:'seat', seatNumber:'1D'}, {type:'seat', seatNumber:'1E'}]
-                },
-                {
-                    rowInfo:{
-                        rowNumber:'2',
-                        onWing:false,
-                        noWindow:false
-                    },
-                    cols:[{type:'seat', seatNumber:'2A'}, {type:'seat', seatNumber:'2B'}, {type:'asile'}, {type:'seat', seatNumber:'2D'}, {type:'seat', seatNumber:'2E'}]
-                },
-                {
-                    rowInfo:{
-                        rowNumber:'3',
-                        onWing:false,
-                        noWindow:false
-                    },
-                    cols:[{type:'seat', seatNumber:'3A'}, {type:'seat', seatNumber:'3B'}, {type:'asile'}, {type:'seat', seatNumber:'3D'}, {type:'seat', seatNumber:'3E'}]
-                },
-                {
-                    rowInfo:{
-                        rowNumber:'4',
-                        onWing:false,
-                        noWindow:false
-                    },
-                    cols:[{type:'seat', seatNumber:'4A'}, {type:'seat', seatNumber:'4B'}, {type:'asile'}, {type:'seat', seatNumber:'4D'}, {type:'seat', seatNumber:'4E'}]
-                }
+                // {
+                //     rowInfo:{
+                //         rowNumber:'1',
+                //         onWing:false,
+                //         noWindow:false
+                //     },
+                //     cols:[{type:'seat', seatNumber:'1A'}, {type:'seat', seatNumber:'1B'}, {type:'asile'}, {type:'seat', seatNumber:'1D'}, {type:'seat', seatNumber:'1E'}]
+                // },
+                // {
+                //     rowInfo:{
+                //         rowNumber:'2',
+                //         onWing:false,
+                //         noWindow:false
+                //     },
+                //     cols:[{type:'seat', seatNumber:'2A'}, {type:'seat', seatNumber:'2B'}, {type:'asile'}, {type:'seat', seatNumber:'2D'}, {type:'seat', seatNumber:'2E'}]
+                // },
+                // {
+                //     rowInfo:{
+                //         rowNumber:'3',
+                //         onWing:false,
+                //         noWindow:false
+                //     },
+                //     cols:[{type:'seat', seatNumber:'3A'}, {type:'seat', seatNumber:'3B'}, {type:'asile'}, {type:'seat', seatNumber:'3D'}, {type:'seat', seatNumber:'3E'}]
+                // },
+                // {
+                //     rowInfo:{
+                //         rowNumber:'4',
+                //         onWing:false,
+                //         noWindow:false
+                //     },
+                //     cols:[{type:'seat', seatNumber:'4A'}, {type:'seat', seatNumber:'4B'}, {type:'asile'}, {type:'seat', seatNumber:'4D'}, {type:'seat', seatNumber:'4E'}]
+                // }
             ]
         }
     },

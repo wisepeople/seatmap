@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueLodash from 'vue-lodash'
 import lodash from 'lodash'
 
 Vue.use(VueLodash, { name: 'custom' , lodash: lodash })
